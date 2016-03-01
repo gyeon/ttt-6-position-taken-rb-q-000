@@ -1,13 +1,12 @@
-board = [
-  " ", " ", " ",
-  " ", " ", " ",
-  " ", " ", " "
-  ]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def position_taken?(board, position)
-  if board, position[0] != " "
-    returns "false"
+  if board[0] == "X" || board[0] == "O"
+    return true
+  elsif board[0] == " " || ""
+    return false
   end
 end
+
 
 
 # code your #position_taken? method here!
